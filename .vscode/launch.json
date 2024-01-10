@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "name": "Flutter_SQflite_CRUD_Application-master",
+            "cwd": "Flutter_SQflite_CRUD_Application-master",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Flutter_SQflite_CRUD_Application-master (profile mode)",
+            "cwd": "Flutter_SQflite_CRUD_Application-master",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Flutter_SQflite_CRUD_Application-master (release mode)",
+            "cwd": "Flutter_SQflite_CRUD_Application-master",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
