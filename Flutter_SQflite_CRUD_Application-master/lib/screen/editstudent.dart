@@ -71,9 +71,21 @@ Uint8List ? selectedImageByInBytes;
     if (selectedImageByInBytes != null && imagepath != null) {
       uploadImage(selectedImageByInBytes!, imagepath!).then((imageUrl) {
         updatedata(widget.id, imageUrl);
+         ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        backgroundColor: Colors.green,
+        content: Text("Successfully Added"),
+      ),
+    );
       });
     } else {
       updatedata(widget.id, widget.url);
+       ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        backgroundColor: Colors.green,
+        content: Text("Successfully Added"),
+      ),
+    );
     }
   } else {
     return;
@@ -100,8 +112,8 @@ Uint8List ? selectedImageByInBytes;
                         child:  CircleAvatar(
                             radius: 100,
                             child:  selectedImageByInBytes ==null
-                      ? Image.network(widget.url,  fit: BoxFit.cover,)
-                      :ClipOval(child: Image.memory(selectedImageByInBytes!,  fit: BoxFit.cover,)),
+                      ? ClipOval(child: Image.network(widget.url,  fit: BoxFit.cover,))
+                      :ClipOval(child: Image.memory(selectedImageByInBytes!,  fit: BoxFit.fill,)),
 
                         ),
                       ),
